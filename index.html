@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Syed Kashif Ali · Cloud DevOps &amp; Forward Deployed Engineer</title>
+<meta name="description" content="Portfolio of Syed Kashif Ali, Cloud DevOps and Forward Deployed Engineer in Hyderabad.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☁️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&display=swap">
+<style>
+:root{--accent:#925434;--bg:#fff;--ink:#000;--mute:#625653;--sky:#c9d3df;--sand:#e3c1aa;--sage:#707569;--btn:#0e0e0e;--r:clamp(28px,4vw,50px);--u:10px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:Aeonik,"Inter Tight",system-ui,sans-serif;font-weight:400;background:var(--bg);color:var(--ink);line-height:1.35;font-size:16px;overflow-x:hidden;padding-top:env(safe-area-inset-top,0)}
+a{color:inherit}
+#bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 75% 25%,var(--sand) 0,transparent 40%),radial-gradient(circle at 15% 80%,var(--sky) 0,transparent 40%)}
+#bg canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.85}
+main,header,footer{position:relative;z-index:1}
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,40px)}
+section{padding:clamp(60px,10vw,120px) 0}
+.eyebrow{font-size:14px;color:var(--accent);margin-bottom:20px;letter-spacing:.02em}
+h1,h2,h3{font-weight:400;letter-spacing:-.02em}
+h1{font-size:clamp(44px,9vw,75px);line-height:1}
+h2{font-size:clamp(34px,6vw,56px);line-height:1.05;margin-bottom:40px}
+h3{font-size:clamp(20px,2.4vw,28px);line-height:1.15}
+p{color:var(--mute)}
+nav{position:fixed;top:calc(14px + env(safe-area-inset-top,0));left:50%;transform:translateX(-50%);z-index:50;width:min(920px,calc(100% - 28px));display:flex;align-items:center;justify-content:space-between;gap:10px;padding:8px 8px 8px 24px;border-radius:100px;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border:.7px solid var(--mute)}
+.logo{text-decoration:none;font-size:16px;white-space:nowrap}
+.links{display:flex;gap:4px;list-style:none}
+.links a{display:block;padding:10px 14px;border-radius:100px;text-decoration:none;font-size:14px;color:var(--mute);transition:.25s}
+.links a:hover{color:var(--ink)}
+.links a.on{background:var(--btn);color:#fff}
+#burger{display:none;min-width:44px;min-height:44px;border-radius:100px;border:.7px solid var(--mute);background:transparent;font:inherit;font-size:14px;padding:0 18px;cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 28px;border-radius:100px;font:inherit;font-size:16px;text-decoration:none;border:.7px solid var(--ink);color:var(--ink);background:transparent;transition:.25s;cursor:pointer}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.p:hover{background:var(--btn);border-color:var(--btn)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:40px}
+#hero{min-height:100svh;display:flex;align-items:center;padding-top:120px}
+#hero p.lead{font-size:clamp(18px,2.2vw,24px);max-width:640px;margin-top:30px;color:var(--ink)}
+.role{font-size:clamp(18px,2.4vw,28px);color:var(--accent);margin-top:20px}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}.w>span{display:inline-block}
+.pill{display:inline-block;padding:6px 14px;border-radius:100px;border:.7px solid var(--mute);font-size:13px;color:var(--ink);margin:0 6px 6px 0}
+.grid{display:grid;gap:20px}
+.card{border-radius:var(--r);padding:clamp(24px,3.5vw,40px);border:.7px solid rgba(98,86,83,.5);background:rgba(255,255,255,.82);transition:transform .35s,background .35s}
+.card:hover{transform:translateY(-6px);background:var(--sand)}
+.about{grid-template-columns:1.4fr 1fr}
+.about .big{font-size:clamp(22px,3vw,34px);line-height:1.2;color:var(--ink)}
+.about .big+p{margin-top:20px}
+.facts{background:var(--sky)}.facts:hover{background:var(--sky)}
+.facts dt{font-size:13px;color:var(--mute);margin-top:18px}.facts dt:first-child{margin-top:0}.facts dd{font-size:18px}
+.skills{grid-template-columns:repeat(3,1fr)}
+.skills h3{margin-bottom:20px}
+.proj{grid-template-columns:repeat(2,1fr)}
+.proj .card{display:flex;flex-direction:column;gap:16px}
+.proj .n{font-size:14px;color:var(--accent)}
+.proj .tags{margin-top:auto}
+.proj .btn{align-self:flex-start;min-height:44px;padding:8px 22px;font-size:14px}
+.tl{position:relative;padding-left:clamp(28px,5vw,60px)}
+.tl:before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--mute);opacity:.3}
+.tl .line{position:absolute;left:6px;top:8px;bottom:8px;width:1px;background:var(--accent);transform-origin:top;transform:scaleY(0)}
+.job{position:relative;margin-bottom:20px}
+.job:before{content:"";position:absolute;left:calc(-1 * clamp(28px,5vw,60px) + 1px);top:34px;width:11px;height:11px;border-radius:50%;background:var(--accent)}
+.job .d{font-size:14px;color:var(--accent);margin-bottom:8px}
+.job .o{margin:6px 0 16px}
+.job ul{padding-left:20px;color:var(--mute);display:grid;gap:8px;font-size:15px}
+.two{grid-template-columns:1fr 1fr;gap:40px}
+.two h3{margin-bottom:20px}
+.item{padding:20px 0;border-top:.7px solid rgba(98,86,83,.4)}
+.item .d{font-size:13px;color:var(--accent)}
+.item a{font-size:14px;color:var(--accent)}
+.item h4{font-weight:400;font-size:20px;margin:4px 0}
+#contact .card{background:var(--accent);border-color:var(--accent);text-align:left}
+#contact .card:hover{background:var(--accent);transform:none}
+#contact h2,#contact p,#contact a{color:#fff}
+#contact h2{margin-bottom:20px}
+.cl{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+#contact .btn{border-color:#fff;color:#fff}
+#contact .btn:hover{background:#fff;color:var(--accent)}
+footer{padding:30px 0 50px;font-size:14px;color:var(--mute)}
+@media(max-width:1024px){.skills{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}}
+@media(max-width:760px){
+ #burger{display:block}
+ .links{position:absolute;top:calc(100% + 10px);left:0;right:0;flex-direction:column;background:#fff;border:.7px solid var(--mute);border-radius:32px;padding:12px;display:none}
+ .links.open{display:flex}.links a{padding:14px 18px}
+ .skills,.proj,.two{grid-template-columns:1fr}
+}
+.sr{position:absolute;left:-999px}
+.sr:focus{left:10px;top:10px;background:#fff;padding:10px;z-index:99}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<a class="sr" href="#about">Skip to content</a>
+<div id="bg" aria-hidden="true"></div>
+
+<header>
+<nav aria-label="Primary">
+ <a class="logo" href="#hero">Syed Kashif Ali</a>
+ <ul class="links" id="menu">
+  <li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li>
+  <li><a href="#projects">Projects</a></li><li><a href="#credentials">Credentials</a></li><li><a href="#contact">Contact</a></li>
+ </ul>
+ <button id="burger" aria-expanded="false" aria-controls="menu">Menu</button>
+</nav>
+</header>
+
+<main>
+<section id="hero"><div class="wrap">
+ <p class="eyebrow">Hyderabad, Telangana, India</p>
+ <h1 id="name">Syed Kashif Ali</h1>
+ <p class="role">Cloud DevOps &amp; Forward Deployed Engineer</p>
+ <p class="lead">I build scalable cloud infrastructure, automate deployments, and solve real-world engineering challenges, and I'm exploring Generative AI, AI agents, and Model Context Protocol (MCP).</p>
+ <div class="btns">
+  <a class="btn p" href="#projects">View Projects</a>
+  <a class="btn" href="#contact">Contact Me</a>
+  <a class="btn" href="Resume.pdf" download>Download Resume</a>
+ </div>
+</div></section>
+
+<section id="about"><div class="wrap">
+ <p class="eyebrow">About</p><h2>Cloud-native, automated, and increasingly intelligent.</h2>
+ <div class="grid about">
+  <div class="card">
+   <p class="big">I'm a Cloud DevOps and Forward Deployed Engineer passionate about building scalable cloud infrastructure, automating deployments, and solving real-world engineering challenges.</p>
+   <p>I work with AWS, multi-cloud technologies, Docker, Kubernetes, Terraform, CI/CD pipelines, and cloud-native architectures. I'm also exploring Generative AI, AI agents, and Model Context Protocol (MCP) to build intelligent, production-ready solutions.</p>
+   <p>I enjoy participating in developer communities, hackathons, and technical events where I can collaborate, learn, and turn innovative ideas into practical projects.</p>
+  </div>
+  <dl class="card facts">
+   <dt>Currently</dt><dd>DevOps Engineer Intern, Cyser IT Services</dd>
+   <dt>Studying</dt><dd>MCA, Suraj Institute of Management, Beed</dd>
+   <dt>Based in</dt><dd>Hyderabad, India</dd>
+   <dt>Focus</dt><dd>AWS · Kubernetes · Terraform · AI &amp; MCP</dd>
+  </dl>
+ </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+ <p class="eyebrow">Skills</p><h2>Tools I work with.</h2>
+ <div class="grid skills" id="skillGrid"></div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+ <p class="eyebrow">Experience</p><h2>Where I've worked.</h2>
+ <div class="tl"><span class="line"></span>
+  <article class="card job">
+   <p class="d">JUN 2026 – PRESENT</p><h3>DevOps Engineer · Internship</h3><p class="o">Cyser IT Services</p>
+   <ul>
+    <li>Working on cloud-native application deployment and DevOps automation using AWS and Linux.</li>
+    <li>Building and maintaining CI/CD pipelines using GitHub Actions.</li>
+    <li>Containerizing applications using Docker and Docker Compose.</li>
+    <li>Deploying and managing containerized workloads on Kubernetes, including deployments, services, ingress, and autoscaling.</li>
+    <li>Working with AWS EC2, RDS MySQL, and cloud networking for application deployment.</li>
+    <li>Configuring Nginx reverse proxy and troubleshooting frontend-backend connectivity.</li>
+    <li>Implementing observability using Prometheus, Grafana, CloudWatch, and application health checks.</li>
+    <li>Monitoring application metrics, analyzing logs, and troubleshooting deployment and performance issues.</li>
+    <li>Working with Python MCP servers and AI integrations to connect applications with intelligent tools.</li>
+    <li>Managing environment variables, application configurations, and deployment troubleshooting.</li>
+   </ul>
+  </article>
+  <article class="card job">
+   <p class="d">NOV 2025 – DEC 2026</p><h3>Cloud Engineer · Internship</h3><p class="o">Future Application</p>
+   <ul>
+    <li>Worked on cloud computing and DevOps practices, gaining practical experience with application deployment, infrastructure automation, and CI/CD workflows.</li>
+    <li>Explored containerization with Docker, cloud infrastructure on AWS, and automation tools to improve deployment consistency and reliability.</li>
+    <li>Collaborated on technical tasks, troubleshooting, and learning modern cloud-native development practices.</li>
+   </ul>
+  </article>
+ </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+ <p class="eyebrow">Projects</p><h2>Things I've built.</h2>
+ <div class="grid proj" id="projGrid"></div>
+</div></section>
+
+<section id="credentials"><div class="wrap">
+ <p class="eyebrow">Certifications &amp; Education</p><h2>Learning, verified.</h2>
+ <div class="grid two">
+  <div><h3>Certifications</h3><div id="certs"></div></div>
+  <div><h3>Education</h3>
+   <div class="item"><p class="d">JUN 2022 – MAR 2025</p><h4>Bachelor of Computer Applications (BCA)</h4><p>Savitribai Phule Pune University · Grade A</p></div>
+   <div class="item"><p class="d">SEPT 2026 – JUN 2028</p><h4>Master of Computer Applications (MCA)</h4><p>Suraj Institute of Management, Beed · Currently pursuing</p></div>
+  </div>
+ </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+ <div class="card">
+  <p class="eyebrow" style="color:#fff">Contact</p>
+  <h2>Let's build something together.</h2>
+  <p>Always excited to connect with developers, cloud engineers, AI enthusiasts, and people building the future of technology.</p>
+  <div class="cl">
+   <a class="btn" href="mailto:kashifsayyad09@gmail.com">kashifsayyad09@gmail.com</a>
+   <a class="btn" href="tel:+918265061177">8265061177</a>
+   <a class="btn" href="https://devfest.gdghyd.in/syed-kashif-ali" target="_blank" rel="noopener">DevFest Hyderabad profile</a>
+  </div>
+ </div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Syed Kashif Ali · Hyderabad, India</div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+const SKILLS={
+ "Cloud":["AWS","Azure","Google Cloud","Amazon EC2","Amazon RDS","CloudWatch","Amazon ECR"],
+ "Containers & Orchestration":["Docker","Docker Compose","Kubernetes","Amazon EKS","Helm","Calico CNI","MetalLB"],
+ "CI/CD & IaC":["CI/CD","GitHub Actions","Terraform","Argo CD","GitOps","Bash scripting"],
+ "Observability":["Prometheus","Grafana","Elasticsearch","Fluent Bit","Kibana","CloudWatch"],
+ "AI & LLMs":["LLMOps","LangChain","Model Context Protocol (MCP)","RAG","vLLM","Groq","NVIDIA NIM"],
+ "Backend, Web & Systems":["Python","FastAPI","Flask","React","TypeScript","Node.js","MySQL","Nginx","Linux","System Design"]
+};
+const GH="https://github.com/kashifsayyad09/";
+const PROJ=[
+ ["AMD-vLLM-kubernetes","Kubernetes · vLLM · AMD GPU Operator · AMD Instinct GPUs · Docker/containerd · Calico CNI · Helm · MetalLB · Linux · Bash scripting · Llama 3.2 1B","Educational deployment workflow for running AI inference on Kubernetes clusters powered by AMD GPUs. Automates cluster setup, container runtime configuration, Calico networking, AMD GPU Operator installation, and vLLM deployment with shell scripts, and exposes the inference API through a MetalLB LoadBalancer service.","AMD-vLLM-kubernetes"],
+ ["cyptred-ai","Python · FastAPI · React · TypeScript · MCP · RAG · Groq · NVIDIA NIM · MySQL · AWS · Terraform · Docker · Docker Compose · Nginx · GitHub Actions · Amazon ECR · Prometheus · Grafana","AI Exam Guardian, a privacy-first online exam integrity platform that correlates browser activity and behavioral signals to flag potentially suspicious sessions. Layered architecture with a React frontend, FastAPI backend, MCP server, RAG system, and an AI gateway with Groq and NVIDIA fallback. Includes deterministic risk scoring, evidence timelines, policy-grounded explanations, and a teacher review dashboard.","cyptred-ai"],
+ ["waste-flow-ai","React · Vite · Python · FastAPI · MCP · SQLAlchemy · PyMySQL · AWS RDS MySQL · Nginx · REST APIs · pytest","WasteFlow AI, a smart waste collection prioritization platform. A deterministic, explainable engine scores bins from 0–100 using fill level, estimated overflow time, days since collection, waste type, and temperature, producing a ranked collection plan with transparent reasons, a React dashboard, and AWS RDS MySQL integration.","waste-flow-ai"],
+ ["Ecommerce-microservices-app","Python · Flask · Docker · Kubernetes · Amazon EKS · AWS RDS · Terraform · Argo CD · GitOps · Nginx Ingress · Prometheus · Grafana · Elasticsearch · Fluent Bit · Kibana · GitHub Actions · SQL","E-commerce microservices application deployed on AWS EKS. Infrastructure managed with Terraform, delivery through Argo CD and GitOps, traffic routed by Nginx Ingress, centralized logging with the EFK stack, monitoring with Prometheus and Grafana, and AWS RDS for persistence.","ecommerce-microservice-project-flask"],
+ ["Employer-AI","Python · AI/LLMs · React · Node.js · REST APIs · AWS · MySQL","AI-powered recruitment platform designed to streamline hiring by helping employers manage recruitment workflows, evaluate candidates, and improve hiring efficiency through intelligent automation.","Employer-AI"],
+ ["BankingOps","","AI-powered banking platform that combines banking application workflows with an intelligent conversational chatbot, improving user interactions through natural language while exploring modern application architecture, backend integration, and DevOps automation.","banking-veeraOps"]
+];
+const CERTS=[
+ ["Manage Kubernetes in Google Cloud Skill Badge","Google · OCT 2026","https://www.credly.com/badges/57118bca-ac94-4077-b2a0-846dab119051/linked_in_profile"],
+ ["AI Skills Fest 2026","AI Skills Fest 2026 · JUL 2026","https://www.credly.com/badges/2a7ecc49-cf7e-4608-af91-56c0e5d6a496/linked_in_profile"],
+ ["Claude in Amazon Bedrock","Anthropic · APR 2026","https://verify.skilljar.com/c/rzufvzy36fey"],
+ ["Dynatrace Essentials","Dynatrace · MAR 2026","https://www.credly.com/badges/65998cb0-bce6-4b9e-a9f6-512dcf8935b7/linked_in_profile"],
+ ["OCI Cloud Foundation Associate","Oracle · JUN 2025","https://catalog-education.oracle.com/ords/certview/sharebadge?id=05003FBB7FC2C45E3ECEB77B7CD9F5380C78FA65996BD4A3D3AAF9EC169A4E6F"]
+];
+const $=s=>document.querySelector(s),pills=a=>a.map(t=>`<span class="pill">${t}</span>`).join("");
+$("#skillGrid").innerHTML=Object.entries(SKILLS).map(([k,v],i)=>`<div class="card" ${i%3==1?'style="background:rgba(201,211,223,.6)"':''}><h3>${k}</h3>${pills(v)}</div>`).join("");
+$("#projGrid").innerHTML=PROJ.map((p,i)=>`<article class="card"><span class="n">0${i+1}</span><h3>${p[0]}</h3><p>${p[2]}</p>${p[1]?`<div class="tags">${pills(p[1].split(" · "))}</div>`:""}<a class="btn" href="${GH+p[3]}" target="_blank" rel="noopener">View repository</a></article>`).join("");
+$("#certs").innerHTML=CERTS.map(c=>`<div class="item"><p class="d">${c[1]}</p><h4>${c[0]}</h4><a href="${c[2]}" target="_blank" rel="noopener">Verify credential ↗</a></div>`).join("");
+
+// nav
+const menu=$("#menu"),bg=$("#burger");
+bg.onclick=()=>{const o=menu.classList.toggle("open");bg.setAttribute("aria-expanded",o);bg.textContent=o?"Close":"Menu"};
+menu.addEventListener("click",e=>{if(e.target.tagName=="A"){menu.classList.remove("open");bg.setAttribute("aria-expanded",false);bg.textContent="Menu"}});
+addEventListener("keydown",e=>{if(e.key=="Escape")menu.classList.remove("open")});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll(".links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+e.target.id))}),{rootMargin:"-45% 0px -50% 0px"});
+document.querySelectorAll("main section").forEach(s=>io.observe(s));
+
+// GSAP
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+if(window.gsap&&window.ScrollTrigger&&!reduce){
+ gsap.registerPlugin(ScrollTrigger);
+ const n=$("#name");n.innerHTML=n.textContent.split(" ").map(w=>`<span class="w"><span>${w}</span></span>`).join(" ");
+ gsap.timeline({defaults:{ease:"power4.out"}})
+  .from("#name .w>span",{yPercent:110,duration:1.1,stagger:.12})
+  .from("#hero .eyebrow,#hero .role,#hero .lead,#hero .btns .btn",{y:24,opacity:0,duration:.8,stagger:.08},"-=.7");
+ gsap.utils.toArray("section:not(#hero)").forEach(s=>{
+  gsap.from(s.querySelectorAll(".eyebrow,h2"),{y:40,opacity:0,duration:.9,stagger:.1,ease:"power3.out",scrollTrigger:{trigger:s,start:"top 80%"}});
+  ScrollTrigger.batch(s.querySelectorAll(".card,.item"),{start:"top 90%",once:true,onEnter:b=>gsap.from(b,{y:50,opacity:0,duration:.8,stagger:.1,ease:"power3.out",overwrite:true})});
+ });
+ gsap.to(".tl .line",{scaleY:1,ease:"none",scrollTrigger:{trigger:".tl",start:"top 70%",end:"bottom 70%",scrub:true}});
+}
+
+// 3D background
+(function(){
+ const host=$("#bg");let gl;
+ try{const c=document.createElement("canvas");gl=!!(window.THREE&&(c.getContext("webgl2")||c.getContext("webgl")))}catch(e){gl=false}
+ if(!gl)return; // static gradient fallback stays
+ const R=new THREE.WebGLRenderer({antialias:true,alpha:true});
+ R.setPixelRatio(Math.min(devicePixelRatio,1.5));host.appendChild(R.domElement);
+ const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(55,1,.1,100);C.position.z=14;
+ const G=new THREE.Group();S.add(G);
+ const N=Math.innerWidth<760?28:46,pts=[],cols=[0x925434,0x625653,0x707569];
+ for(let i=0;i<N;i++){
+  const p=new THREE.Vector3((Math.random()-.5)*22,(Math.random()-.5)*14,(Math.random()-.5)*10);pts.push(p);
+  const g=i%5==0?new THREE.IcosahedronGeometry(.28,0):new THREE.SphereGeometry(.12,12,12);
+  const m=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:cols[i%3],wireframe:i%5==0}));m.position.copy(p);m.userData.ph=Math.random()*6;G.add(m);
+ }
+ const v=[];for(let i=0;i<N;i++)for(let j=i+1;j<N;j++)if(pts[i].distanceTo(pts[j])<4.6)v.push(pts[i].x,pts[i].y,pts[i].z,pts[j].x,pts[j].y,pts[j].z);
+ const lg=new THREE.BufferGeometry();lg.setAttribute("position",new THREE.Float32BufferAttribute(v,3));
+ G.add(new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:0x625653,transparent:true,opacity:.28})));
+ const size=()=>{R.setSize(innerWidth,innerHeight);C.aspect=innerWidth/innerHeight;C.updateProjectionMatrix()};size();addEventListener("resize",size);
+ let mx=0,my=0,tx=0,ty=0;
+ addEventListener("pointermove",e=>{mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5},{passive:true});
+ let vis=true;document.addEventListener("visibilitychange",()=>{vis=!document.hidden;if(vis)loop()});
+ const t0=performance.now();
+ function loop(){
+  if(!vis)return;requestAnimationFrame(loop);
+  const t=(performance.now()-t0)/1000,sc=scrollY/Math.max(1,document.body.scrollHeight-innerHeight);
+  tx+=(mx-tx)*.04;ty+=(my-ty)*.04;
+  G.rotation.y=reduce?0:t*.04+tx*.6+sc*1.5;G.rotation.x=ty*.4+sc*.4;
+  G.children.forEach(o=>{if(o.userData.ph!==undefined&&!reduce)o.position.y+=Math.sin(t+o.userData.ph)*.0015;});
+  R.render(S,C);
+ }
+ loop();
+})();
+</script>
+</body>
+</html>
